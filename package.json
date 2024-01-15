@@ -2,7 +2,7 @@
   "dependencies": {
     "node": "^21.2.0"
   },
-  "name": "09_Javascript_array",
+  "name": "05_javascript_functions",
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
