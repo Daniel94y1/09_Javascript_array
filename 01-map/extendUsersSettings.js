@@ -56,9 +56,9 @@ const USERS = [
  */
 
 const extendUsersSettings = function (USERS) {
-  const userUpdate = USERS.map((element, index) => {
+  const userUpdate = USERS.map((user, index) => {
     return {
-      ...element,
+      ...user,
       id: index,
       isEnabled: true,
     };
