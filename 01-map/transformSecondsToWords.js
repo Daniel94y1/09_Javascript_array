@@ -5,3 +5,13 @@
  */
 
 const SECONDS = [2, 5, 100];
+
+const transformSecondsToWords = function (SECONDS) {
+  const newWord = SECONDS.map((second) => {
+    return second.toString();
+  });
+
+  return newWord;
+};
+
+export default transformSecondsToWords;
