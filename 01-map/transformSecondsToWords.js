@@ -1,14 +1,17 @@
-import transformSecondsToWords from "./transformSecondsToWords";
+/**
+ * Given SECONDS array, define function 'transformSecondsToWords' to return an array of strings from numbers
+ *
+ * expected: ["2", "5", "100"]
+ */
 
-describe("Given feedMonkeys", () => {
-  test("when [2, 5, 100] is provided as argument Then exècted array should be returned ", () => {
-    const SECONDS = [2, 5, 100];
-    const expectedResult = ["2", "5", "100"];
+const SECONDS = [2, 5, 100];
 
-    const newWord = transformSecondsToWords(SECONDS);
-
-    expect(newWord).toBeDefined();
-    expect(newWord.length).toBe(3);
-    expect(newWord).toEqual(expectedResult);
+const transformSecondsToWords = function (SECONDS) {
+  const newWord = SECONDS.map((element) => {
+    return element.toString();
   });
-});
+
+  return newWord;
+};
+
+export default transformSecondsToWords;

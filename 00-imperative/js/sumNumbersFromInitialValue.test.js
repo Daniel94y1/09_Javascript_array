@@ -4,7 +4,7 @@ describe("Given sumNumbersFromInitialValue", () => {
   test("when an array of numbers and an initialValue is given as an argument, the sum of the values in the array starting at the initialValue is returned ", () => {
     const numbers = [1, 2, 3, 4, 5];
     const initialValue = 0;
-    const expectesResult = 15;
+    const expectedResult = 15;
 
     const sum = sumNumbersFromInitialValue(numbers, initialValue);
 
