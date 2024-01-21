@@ -4,4 +4,8 @@
  * expected: '123'
  */
 
-const VALUES = [1, 2, 3];
+export const VALUES = [1, 2, 3];
+
+export function getWordFromValues(valuesArray) {
+  return valuesArray.reduce((word, value) => word + value, "");
+}

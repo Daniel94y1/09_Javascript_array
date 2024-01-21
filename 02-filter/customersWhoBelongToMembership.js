@@ -4,7 +4,7 @@
  * expected: [{ name: 'Foo', member: true },  { name: 'Fizz', member: true },  { name: 'FizzBuzz', member: true }]
  */
 
-const CUSTOMERS = [
+export const CUSTOMERS = [
   {
     name: "Foo",
     member: true,
@@ -26,3 +26,7 @@ const CUSTOMERS = [
     member: true,
   },
 ];
+
+export function customersWhoBelongToMembership(customersArray) {
+  return customersArray.filter((customer) => customer.member);
+}

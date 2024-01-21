@@ -4,4 +4,14 @@
  * expected: [ 'Italy' ]
  */
 
-const COUNTRIES = ["United Kingdom", "Italy", "France", "Portugal", "Greece"];
+export const COUNTRIES = [
+  "United Kingdom",
+  "Italy",
+  "France",
+  "Portugal",
+  "Greece",
+];
+
+export function extractCountriesWithFiveCharactersOrFewer(countriesArray) {
+  return countriesArray.filter((country) => country.length <= 5);
+}

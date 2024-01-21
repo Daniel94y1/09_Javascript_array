@@ -4,4 +4,8 @@
  * expected: [ 2, 12, 42, 28 ]
  */
 
-const COUNTERS = [2, 25, 43, 12, 67, 42, 28];
+export const COUNTERS = [2, 25, 43, 12, 67, 42, 28];
+
+export function getEvensOnly(countersArray) {
+  return countersArray.filter((counter) => counter % 2 === 0);
+}
