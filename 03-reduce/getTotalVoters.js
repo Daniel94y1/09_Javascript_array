@@ -21,7 +21,7 @@ export const VOTERS = [
 function getTotalVoters(votersArray) {
   return votersArray.reduce(
     (total, voter) => (voter.voted ? total + 1 : total),
-    0
+    0,
   );
 }
 export default getTotalVoters;
