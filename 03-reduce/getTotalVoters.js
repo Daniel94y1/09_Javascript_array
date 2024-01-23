@@ -4,7 +4,7 @@
  * expected: 7
  */
 
-const VOTERS = [
+export const VOTERS = [
   { name: "Bob", age: 30, voted: true },
   { name: "Jake", age: 32, voted: true },
   { name: "Kate", age: 25, voted: false },
@@ -18,3 +18,10 @@ const VOTERS = [
   { name: "Jeff", age: 30, voted: true },
   { name: "Zack", age: 19, voted: false },
 ];
+function getTotalVoters(votersArray) {
+  return votersArray.reduce(
+    (total, voter) => (voter.voted ? total + 1 : total),
+    0,
+  );
+}
+export default getTotalVoters;

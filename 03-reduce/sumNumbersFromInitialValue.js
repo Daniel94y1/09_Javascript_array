@@ -6,4 +6,8 @@
  * expected with initial as 10: 25
  */
 
-const NUMBERS = [1, 2, 3, 4, 5];
+export const NUMBERS = [1, 2, 3, 4, 5];
+
+export function sumNumbersFromInitialValue(initialValue) {
+  return NUMBERS.reduce((sum, number) => sum + number, initialValue);
+}

@@ -6,5 +6,9 @@
  * expected BEATLES: ["George", "Ringo"];
  */
 
-const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
-const BEATLES = ["John", "George", "Paul", "Ringo"];
+export const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
+export const BEATLES = ["John", "George", "Paul", "Ringo"];
+
+export function getLongWords(wordsArray) {
+  return wordsArray.filter((word) => word.length >= 5);
+}

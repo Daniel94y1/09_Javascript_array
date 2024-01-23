@@ -4,11 +4,26 @@
  * expected:
  * {
  *  "EN": {id: 0, enabled: true},
- *  "US": {id: 1, enabled: false},
- *  "EN": {id: 2, enabled: false},
- *  "EN": {id: 3, enabled: false},
- *  "EN": {id: 4, enabled: false},
+ *  "GR": {id: 1, enabled: false},
+ *  "FR": {id: 2, enabled: false},
+ *  "IT": {id: 3, enabled: false},
+ *  "PT": {id: 4, enabled: false},
  * }
  */
-
 const LOCALES = ["EN", "GR", "FR", "IT", "PT"];
+
+function createLocalesSettings(localesArray) {
+  return localesArray.reduce((localesSettings, locale, index) => {
+    localesSettings[locale] = localesSettings[locale] || {
+      id: index,
+      enabled: false,
+    };
+
+    localesSettings[locale].id = index;
+    localesSettings[locale].enabled = index === 0;
+
+    return localesSettings;
+  }, {});
+}
+
+export default createLocalesSettings;
