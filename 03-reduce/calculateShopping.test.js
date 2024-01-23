@@ -9,7 +9,7 @@ describe("calculateShopping", () => {
   test("should throw an error for non-array input", () => {
     const invalidInput = "not an array";
     expect(() => calculateShopping(invalidInput)).toThrow(
-      "Input must be an array"
+      "Input must be an array",
     );
   });
 });

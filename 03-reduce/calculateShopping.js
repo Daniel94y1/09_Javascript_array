@@ -19,7 +19,7 @@ export const calculateShopping = (wishes) => {
 
   const totalCost = wishes.reduce(
     (accumulator, item) => accumulator + item.price,
-    0
+    0,
   );
   return totalCost;
 };
